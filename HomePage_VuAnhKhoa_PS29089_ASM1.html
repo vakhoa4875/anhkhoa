@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopaholic</title>
+    <link rel="stylesheet" href="asm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-Y3q3HPf4oqhPjKMUc2lLlHm9X05MDjkmDYMz47G8RVqkZ4lh4DCvxf+krWfm2umTptMfX9JdzcU6xrWRYj+krw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="logo-full-white.png" alt="">
+            </div>
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Tìm kiếm">
+                <button class="search-btn" type="button">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+                <button class="search-btn" id="cart" type="button">
+                    <ion-icon name="cart-outline"></ion-icon>
+                </button>
+                <button class="search-btn" id="cart" type="button">
+                    <ion-icon name="person-outline"></ion-icon>
+                </button>
+            </div>
+            <div class="log-in">
+                <button>Đăng nhập</button>
+                <button>Đăng kí</button>
+            </div>
+        </nav>
+
+        <div class="below">
+            <aside>
+                <div class="menu">
+                    <p><ion-icon id="top" name="menu-outline"></ion-icon>Thiết bị điện tử</p>
+                    <ul>
+                        <li class="has-dropdown">
+                            <ion-icon name="pricetags-outline"></ion-icon>
+                            <a href="#">Laptop</a>
+                            <ion-icon id="right" name="chevron-forward-outline"></ion-icon>
+                            <div class="dropdown">
+                                <ul>
+                                    <li>
+                                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                                        <a href="#">DELL</a>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                                        <a href="#">MSI</a>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                                        <a href="#">LENOVO</a>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                                        <a href="#">ASUS</a>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                                        <a href="#">MACBOOK</a>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                                        <a href="#">HP</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="has-dropdown">
+                            <ion-icon name="pricetags-outline"></ion-icon>
+                            <a href="#">Âm thanh</a>
+                            <ion-icon id="right" name="chevron-forward-outline"></ion-icon>
+                            <div class="dropdown">
+                                <ul>
+                                    <li>
+                                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                                        <a href="#">AirPods</a>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                                        <a href="#">SONY</a>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                                        <a href="#">JBL</a>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                                        <a href="#">VIVAN</a>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                                        <a href="#">XIAOMI</a>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                                        <a href="#">LG</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="has-dropdown">
+                            <ion-icon name="pricetags-outline"></ion-icon>
+                            <a href="#">Điện thoại</a>
+                            <ion-icon id="right" name="chevron-forward-outline"></ion-icon>
+                            <div class="dropdown">
+                                <ul>
+                                    <li>
+                                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                                        <a href="#">iPhone</a>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                                        <a href="#">XIAOMI</a>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                                        <a href="#">SAMSUNG</a>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                                        <a href="#">ASUS</a>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                                        <a href="#">REALME</a>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                                        <a href="#">NOKIA</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="has-dropdown">
+                            <ion-icon name="pricetags-outline"></ion-icon>
+                            <a href="#">PC - Màn hình</a>
+                            <ion-icon id="right" name="chevron-forward-outline"></ion-icon>
+                            <div class="dropdown">
+                                <ul>
+                                    <li>
+                                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                                        <a href="#">Máy tính để bàn</a>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                                        <a href="#">Phụ kiện máy tính</a>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                                        <a href="#">Chọn theo hãng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="has-dropdown">
+                            <ion-icon name="pricetags-outline"></ion-icon>
+                            <a href="#">Phụ kiện</a>
+                            <ion-icon id="right" name="chevron-forward-outline"></ion-icon>
+                            <div class="dropdown">
+                                <ul>
+                                    <li>
+                                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                                        <a href="#">Phụ kiện di động
+                                    <li>
+                                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                                        <a href="#">Phụ kiện Laptop</a>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                                        <a href="#">Phụ kiện mạng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <div class="slide">
+                <button class="nav">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+                <button class="nav next">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+                <img src="61DUO0NqyyL._SX3000_.jpg" alt="">
+                <!-- <div class="transition">
+                    <button>
+                        <img src="—Pngtree—right arrow line black icon_4008091.png" alt="" id="right">
+
+                    </button>
+                </div> -->
+                <!-- <button>
+                    <img id="next" src="—Pngtree—right arrow line black icon_4008091.png" alt="" id="right">
+                </button> -->
+            </div>
+        </div>
+
+        <div class="shop">
+            <div class="mall">
+                <div class="shop-logo">
+                    <img src="christian-dior-new3874.jpg" alt="">
+                </div>
+            </div>
+            <div class="mall">
+                <div class="shop-logo">
+                    <img src="AsusTek-black-logo.png" alt="">
+                </div>
+            </div>
+            <div class="mall">
+                <div class="shop-logo">
+                    <img src="Lenovo_logo_2015.svg.png" alt="">
+                </div>
+            </div>
+            <div class="mall">
+                <div class="shop-logo">
+                    <img src="Samsung_Logo.svg.png" alt="">
+                </div>
+            </div>
+            <div class="mall">
+                <div class="shop-logo">
+                    <img src="xiaomi-logo.jpg" alt="">
+                </div>
+            </div>
+            <div class="mall">
+                <div class="shop-logo">
+                    <img src="JBL-Logo.png" alt="">
+                </div>
+            </div>
+            <div class="mall">
+                <div class="shop-logo">
+                    <img src="HP_New_Logo_2D.svg.png" alt="">
+                </div>
+            </div>
+            <div class="mall">
+                <div class="shop-logo">
+                    <img src="MSI-Symbol.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="item-container">
+
+            <div class="product-grid">
+                <div class="product">
+                    <div class="float">
+                        <img id="hot" src="hot.png" alt="">
+                        <!-- <img id="sale" src="" alt=""> -->
+                    </div>
+                    <img class="product-img" src="1.jpeg">
+                    <div class="product-info">
+                        <div class="product-name">Tai nghe Bluetooth AirPods 3 Lightning Charge Apple MPNY3
+                        </div>
+                        <div class="danh-gia">⭐⭐⭐⭐⭐<span>Sold 89</span></div>
+                        <div class="product-price"><span>5.390.000₫</span>4.490.000₫</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="float">
+                        <img id="hot" src="hot.png" alt="">
+                        <!-- <img id="sale" src="" alt=""> -->
+                    </div>
+                    <img class="product-img" src="5.jpeg">
+                    <div class="product-info">
+                        <div class="product-name">Tai nghe Bluetooth AirPods Pro MagSafe Charge Apple MLWK3
+                        </div>
+                        <div class="danh-gia">⭐⭐⭐⭐⭐<span>Sold 246</span></div>
+                        <div class="product-price"><span>6.790.000₫</span>4.790.000₫</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="float">
+                        <img id="hot" src="hot.png" alt="">
+                        <!-- <img id="sale" src="" alt=""> -->
+                    </div>
+                    <img class="product-img" src="6.jpeg">
+                    <div class="product-info">
+                        <div class="product-name">Tai nghe Bluetooth AirPods Pro (2nd Gen) MagSafe Charge Apple MQD83
+                        </div>
+                        <div class="danh-gia">⭐⭐⭐⭐⭐<span>Sold 662</span></div>
+                        <div class="product-price"><span>6.990.000₫</span>6.490.000₫</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="float">
+                        <img id="hot" src="hot.png" alt="">
+                        <!-- <img id="sale" src="" alt=""> -->
+                    </div>
+                    <img class="product-img" src="7.jpeg">
+                    <div class="product-info">
+                        <div class="product-name">Tai nghe Bluetooth AirPods 3 Wireless Charge Apple MME73
+                        </div>
+                        <div class="danh-gia">⭐⭐⭐⭐⭐<span>Sold 125</span></div>
+                        <div class="product-price"><span>5.490.000₫</span>4.690.000₫</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="float">
+                        <img id="hot" src="hot.png" alt="">
+                        <!-- <img id="sale" src="" alt=""> -->
+                    </div>
+                    <img class="product-img" src="8.jpg">
+                    <div class="product-info">
+                        <div class="product-name">Tai nghe Bluetooth AirPods Pro Wireless Charge Apple MWP22
+                        </div>
+                        <div class="danh-gia">⭐⭐⭐⭐⭐<span>Sold 458</span></div>
+                        <div class="product-price"><span>6.790.000₫</span>4.890.000₫</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="float">
+                        <img id="hot" src="hot.png" alt="">
+                        <!-- <img id="sale" src="" alt=""> -->
+                    </div>
+                    <img class="product-img" src="01.jpg">
+                    <div class="product-info">
+                        <div class="product-name">Điện thoại iPhone 14 Pro Max 128GB
+                        </div>
+                        <div class="danh-gia">⭐⭐⭐⭐⭐<span>Sold 2k</span></div>
+                        <div class="product-price"><span>34.490.000₫</span>28.190.000₫</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="float">
+                        <img id="hot" src="hot.png" alt="">
+                        <!-- <img id="sale" src="" alt=""> -->
+                    </div>
+                    <img class="product-img" src="02.jpg">
+                    <div class="product-info">
+                        <div class="product-name">Điện thoại iPhone 14 Pro 128GB
+                        </div>
+                        <div class="danh-gia">⭐⭐⭐⭐⭐<span>Sold 2k</span></div>
+                        <div class="product-price"><span>30.990.000₫</span>25.690.000₫</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="float">
+                        <img id="hot" src="hot.png" alt="">
+                        <!-- <img id="sale" src="" alt=""> -->
+                    </div>
+                    <img class="product-img" src="03.jpg">
+                    <div class="product-info">
+                        <div class="product-name">Điện thoại iPhone 11 PRO 64GB
+                        </div>
+                        <div class="danh-gia">⭐⭐⭐⭐⭐<span>Sold 4k</span></div>
+                        <div class="product-price"><span>14.990.000₫</span>10.990.000₫</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="float">
+                        <img id="hot" src="hot.png" alt="">
+                        <!-- <img id="sale" src="" alt=""> -->
+                    </div>
+                    <img class="product-img" src="04.jpg">
+                    <div class="product-info">
+                        <div class="product-name">Điện thoại iPhone 14 128GB
+                        </div>
+                        <div class="danh-gia">⭐⭐⭐⭐⭐<span>Sold 2k</span></div>
+                        <div class="product-price"><span>24.990.000₫</span>19.990.000₫</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="float">
+                        <img id="hot" src="hot.png" alt="">
+                        <!-- <img id="sale" src="" alt=""> -->
+                    </div>
+                    <img class="product-img" src="05.jpg">
+                    <div class="product-info">
+                        <div class="product-name">Điện thoại iPhone 14 Plus 128GB
+                        </div>
+                        <div class="danh-gia">⭐⭐⭐⭐⭐<span>Sold 699</span></div>
+                        <div class="product-price"><span>27.990.000₫</span>23.090.000₫</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h3>This is the product of PS29089 - Vu Anh Khoa</h3>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
