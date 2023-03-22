@@ -1,0 +1,473 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+/* 
+
+THIS IS NAVIGATE BAR - SEARCH BAR
+
+*/
+
+nav {
+    width: 100%;
+    background-image: linear-gradient(rgb(255, 68, 0), rgb(255, 119, 0));
+    opacity: 1;
+    position: fixed;
+    height: 67px;
+    display: flex;
+    line-height: 67px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+nav* {
+    margin: 0 auto;
+}
+
+.logo img {
+    /* display:inline; */
+    margin: 0 10px;
+    margin-top: 25px;
+    width: auto;
+    height: 40px;
+}
+
+.shopping-cart {
+    background-color: white;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.shopping-cart img {
+    margin: 0 10px;
+    margin-top: 36px;
+    width: 45px;
+    height: auto;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    /* display: inline-block; */
+}
+
+.search-bar input {
+    background-color: #e2e2e2;
+    border: none;
+    border-radius: 20px;
+    height: 44px;
+    width: 450px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-left: 16px;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-bar button {
+    border: none;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.search-btn ion-icon {
+    height: 43px;
+    width: 43px;
+    color: firebrick;
+}
+
+#cart {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#cart-img {
+    height: 35px;
+    width: 35px;
+}
+
+.log-in {
+    position: absolute;
+    right: 1.5%;
+}
+
+.log-in button {
+    border-radius: 5px;
+    height: 44px;
+    width: auto;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.log-in button:hover {
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    color: orange;
+}
+
+button:hover {
+    background-color: rgb(220, 220, 220);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* 
+
+This is product detail
+
+*/
+
+.product-container {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.contain-all {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding-top: 70px;
+    width: 80%;
+    height: 65vh;
+    position: relative;
+}
+
+.link-to {
+    line-height: 25px;
+    font-size: 20px;
+    margin-top: 5px;
+    height: 35px;
+}
+
+.product-img {
+    margin: 12px;
+    margin-right: 0px;
+    width: 40%;
+    height: auto;
+    height: auto;
+    float: left;
+    border-radius: 8px;
+}
+
+.product-img img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+    box-shadow: 0 0 2px lightgray;
+}
+
+.description {    
+    width: 58%;
+    float: right;
+    height: auto;
+    margin-block: 12px  ;
+}
+
+.name {
+    width: 100%;
+    height: auto;
+    /* background-color: rgb(255, 255, 255);     */
+    display: flex;
+    align-items: center;
+}
+.name img {
+    height: 50px;
+    width: auto;
+}
+.name span {
+    font-size: 22px;
+}
+.rating {
+    width: 100%;
+    height: 55px;
+    /* background-color: rgb(147, 82, 82); */
+    display: flex;
+    align-items: center;
+}
+
+.rating span {
+    font-size: 18px;
+    color: rgb(96, 96, 96);
+    text-decoration: underline;
+}
+.rating p {
+    font-size: 18px;
+    padding-left: 25px;
+}
+
+.price {
+    width: 92.5%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.085);
+    font-size: 35px;
+    color: orangered;
+    margin: 0 auto  ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 90px; */
+    border-radius: 5px;
+}
+
+.price span, .price p {
+    font-size: 20px;
+    color: rgb(81, 81, 81);
+    margin-inline: 12px;
+}
+
+
+.note {
+    object-fit: cover;
+    transition: all 0.25s ease-in-out;
+    margin-inline: 15px; 
+    /* margin 2 ben */
+    margin-block: 15px;
+    /* margin top va bottom */
+    flex-direction: column;
+    /* x */
+    flex: 1;
+    gap: 12px;
+    /* gap between 2 elements */
+}
+/* .price p:nth-child(2n + 1) {
+    font-size: 20px;
+    color:rgb(114, 114, 114);
+    flex: 1;
+    margin-inline: 10px;
+} */
+
+#gia-cu {
+    margin-left: 12px;
+    text-decoration: line-through;
+}
+
+.option {
+    width: 100%;
+    height: 76px;
+    /* background-color: rgb(222, 184, 184); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.option button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    margin: 0 25px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.223);
+}
+
+.option span {
+    font-size: 20px;
+    color: gray;
+    margin-left: 25px;
+}
+
+.option button:hover  {
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.225);
+    transform: scale(1.15);
+}
+.option button:focus {
+    outline: 4px solid black;
+}
+
+.quantity {
+    width: 100%;
+    height: 65px;
+    /* background-color: rgb(164, 122, 122); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    color: rgb(92, 92, 92);
+    gap: 60px;
+}
+
+.quantity span {
+    margin: 0 25px;
+    float: right;
+}
+
+.quantity button {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(237, 237, 237);
+    border: none;
+    outline: 1px solid gray;
+    margin: 0;
+}
+._left {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.buying {
+    width: 100%;
+    height: 100px;
+    /* background-color: rgb(171, 158, 158); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+
+
+.buying button {
+    background-color: rgb(255, 68, 0);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.buying button:hover {
+    transform: scale(1.1);
+    transition: all 0.2 ease-in-out;
+    cursor: pointer;
+}
+
+ion-icon {
+    margin-bottom: -3px;
+}
+
+#buy-now {
+    color: rgb(255, 255, 255);
+    background-color: red;    
+}
+
+.detail {
+    padding-top: 70px;
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    position: relative;
+}
+
+.thong-tin {
+    width: 57.5%;
+    float: left;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    padding: 0 12px;
+}
+.thong-tin img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.thong-tin p {
+    margin: auto 12px;
+}
+
+.relevant {
+    width: 40%;
+    float: right;
+    background-color: rgb(236, 236, 236);
+    display: block;
+    border-radius: 5px;
+}
+
+.relevant h2 {
+    text-align: center;
+}
+._product {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 8px rgba(128, 128, 128, 0.386);
+    background-color: white;
+    width: 96%;
+    margin: 4px auto;
+    border-radius: 5px;
+}
+
+._product-img {
+    width: 45%;
+    margin: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+._product-info {
+    width: 55%;
+    margin: 24px 4px;
+    font-size: 16px;
+    display: block;
+}
+
+._danh-gia {
+    margin: 8px 4px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+._product-name {
+    font-size: 16px;
+    margin: 8px 4px;
+}
+
+._product-price {
+    margin: 8px 4px;
+    color: orangered;
+    display: flex;
+    justify-content: space-between;
+
+}
+._product-price del {
+    font-size: 15px;
+    color: rgb(98, 98, 98);
+}
+
+strong {
+    font-size: 1.05em;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    border-top: 5px solid orangered;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(orangered, rgb(255, 255, 255));
+}
+
+footer h3 {
+    line-height: 50px;
+    color: #888;
+}
