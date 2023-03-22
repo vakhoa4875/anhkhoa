@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <nav>
+            <div class="logo">
+                <img src="logo-full-white.png" alt="">
+            </div>
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="What chu wanna find?">
+                <button class="search-btn" type="button">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+                <button class="search-btn" id="cart" type="button">
+                    <ion-icon name="cart-outline"></ion-icon>
+                </button>
+                <button class="search-btn" id="cart" type="button">
+                    <ion-icon name="person-outline"></ion-icon>
+                </button>
+            </div>
+            <div class="log-in">
+                <button>Log in</button>
+                <button>Sign up</button>
+            </div>
+        </nav>
+
+        <div class="main-part">
+            <main>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Sản Phẩm</th>
+                            <th>Options</th>
+                            <th>Giá</th>
+                            <th>Số Lượng</th>
+                            <th>Tổng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="p-img">
+                                <ion-icon name="square-outline"></ion-icon>
+                                <img src="1.jpeg" alt="">
+                            </td>
+                            <td id="p-name">
+                                Tai nghe Bluetooth AirPods 3 Lightning Charge Apple MPNY3
+                            </td>
+                            <td id="p-option">
+                                <select name="_option" id="_option">
+                                    <option value="blue">Blue</option>
+                                    <option value="red">Red</option>
+                                    <option value="light-purple">Light Purple</option>
+                                    <option value="white">White</option>
+                                    <option value="black">Black</option>
+                                </select>
+                            </td>
+                            <td id="p-price">
+                                <p><del>5.390.000₫</del></p>
+                                <p id="price">4.490.000₫</p>
+                            </td>
+                            <td id="p-quantity">
+                                <button>-</button>
+                                <input type="number" placeholder="0">
+                                <button>+</button>
+                            </td>
+                            <td id="p-total">
+                                4.490.000₫
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="p-img">
+                                <ion-icon name="square-outline"></ion-icon>
+                                <img src="5.jpeg" alt="">
+                            </td>
+                            <td id="p-name">
+                                Tai nghe Bluetooth AirPods Pro MagSafe Charge Apple MLWK3
+                            </td>
+                            <td id="p-option">
+                                <select name="_option" id="_option">
+                                    <option value="blue">Blue</option>
+                                    <option value="red">Red</option>
+                                    <option value="light-purple">Light Purple</option>
+                                    <option value="white">White</option>
+                                    <option value="black">Black</option>
+                                </select>
+                            </td>
+                            <td id="p-price">
+                                <p><del>6.790.000₫</del></p>
+                                <p id="price">4.790.000₫</p>
+                            </td>
+                            <td id="p-quantity">
+                                <button>-</button>
+                                <input type="number" placeholder="0">
+                                <button>+</button>
+                            </td>
+                            <td id="p-total">
+                                4.790.000₫
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="p-img">
+                                <ion-icon name="square-outline"></ion-icon>
+                                <img src="6.jpeg" alt="">
+                            </td>
+                            <td id="p-name">
+                                Tai nghe Bluetooth AirPods Pro (2nd Gen) MagSafe Charge Apple MQD83
+                            </td>
+                            <td id="p-option">
+                                <select name="_option" id="_option">
+                                    <option value="blue">Blue</option>
+                                    <option value="red">Red</option>
+                                    <option value="light-purple">Light Purple</option>
+                                    <option value="white">White</option>
+                                    <option value="black">Black</option>
+                                </select>
+                            </td>
+                            <td id="p-price">
+                                <p><del>6.990.000₫</del></p>
+                                <p id="price">6.490.000₫</p>
+                            </td>
+                            <td id="p-quantity">
+                                <button>-</button>
+                                <input type="number" placeholder="0">
+                                <button>+</button>
+                            </td>
+                            <td id="p-total">
+                                6.490.000₫
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="p-img">
+                                <ion-icon name="square-outline"></ion-icon>
+                                <img src="7.jpeg" alt="">
+                            </td>
+                            <td id="p-name">
+                                Tai nghe Bluetooth AirPods 3 Wireless Charge Apple MME73
+                            </td>
+                            <td id="p-option">
+                                <select name="_option" id="_option">
+                                    <option value="blue">Blue</option>
+                                    <option value="red">Red</option>
+                                    <option value="light-purple">Light Purple</option>
+                                    <option value="white">White</option>
+                                    <option value="black">Black</option>
+                                </select>
+                            </td>
+                            <td id="p-price">
+                                <p><del>5.490.000₫</del></p>
+                                <p id="price">4.690.000₫</p>
+                            </td>
+                            <td id="p-quantity">
+                                <button>-</button>
+                                <input type="number" placeholder="0">
+                                <button>+</button>
+                            </td>
+                            <td id="p-total">
+                                4.690.000₫
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="p-img">
+                                <ion-icon name="square-outline"></ion-icon>
+                                <img src="8.jpg" alt="">
+                            </td>
+                            <td id="p-name">
+                                Tai nghe Bluetooth AirPods Pro Wireless Charge Apple MWP22
+                            </td>
+                            <td id="p-option">
+                                <select name="_option" id="_option">
+                                    <option value="blue">Blue</option>
+                                    <option value="red">Red</option>
+                                    <option value="light-purple">Light Purple</option>
+                                    <option value="white">White</option>
+                                    <option value="black">Black</option>
+                                </select>
+                            </td>
+                            <td id="p-price">
+                                <p><del>6.790.000₫</del></p>
+                                <p id="price">4.890.000₫</p>
+                            </td>
+                            <td id="p-quantity">
+                                <button>-</button>
+                                <input type="number" placeholder="0">
+                                <button>+</button>
+                            </td>
+                            <td id="p-total">
+                                4.890.000₫
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="p-img">
+                                <ion-icon name="square-outline"></ion-icon>
+                                <img src="01.jpg" alt="">
+                            </td>
+                            <td id="p-name">
+                                Điện thoại iPhone 14 Pro Max 128GB
+                            </td>
+                            <td id="p-option">
+                                <select name="_option" id="_option">
+                                    <option value="blue">Blue</option>
+                                    <option value="red">Red</option>
+                                    <option value="light-purple">Light Purple</option>
+                                    <option value="white">White</option>
+                                    <option value="black">Black</option>
+                                </select>
+                            </td>
+                            <td id="p-price">
+                                <p><del>34.490.000₫</del></p>
+                                <p id="price">28.190.000₫</p>
+                            </td>
+                            <td id="p-quantity">
+                                <button>-</button>
+                                <input type="number" placeholder="0">
+                                <button>+</button>
+                            </td>
+                            <td id="p-total">
+                                28.190.000₫
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </main>
+            <div class="sum">
+                <div class="voucher-container">
+                    <div class="voucher general">
+                        <ion-icon name="ticket-outline"></ion-icon>
+                        Shoppe Voucher
+                    </div>
+                    <div class="code general">
+                        <ion-icon name="qr-code-outline"></ion-icon>
+                        Nhập hoặc quét mã
+                    </div>
+                </div>
+                <div class="thao-tac">
+                    <div class="choose general">
+                        <ion-icon name="checkbox-outline"></ion-icon>
+                        Choose All
+                    </div>
+                    <div class="delete general">
+                        <ion-icon name="trash-outline"></ion-icon>
+                        Delete All
+                    </div>
+                    <div class="save general">
+                        <ion-icon name="save-outline"></ion-icon>
+                        Save to Liked
+                    </div>
+                </div>
+                <div class="total-money">
+                    <div>Tổng thanh toán (n items):</div><span> ###,###,###₫</span>
+                </div>
+                <div class="buy">
+                    <button id="buy-all">
+                        <ion-icon name="card-outline"></ion-icon>
+                        Buy All
+
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        This is the product of VuAnhKhoa - PS29089
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
